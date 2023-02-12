@@ -1,0 +1,23 @@
+# Defines the deployment of the app running in a pod on any worker node
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api-server
+  labels:
+    app: api-server
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: api-server
+  template:
+    metadata:
+      labels:
+        app: api-server
+    spec:
+      containers:
+        - name: api-server
+          image: api-server:latest
+          ports:
+            - containerPort: 8080
+          imagePullPolicy: IfNotPresent

@@ -1,0 +1,15 @@
+# Enables the pods in a deployment to be accessible from outside the cluster
+apiVersion: v1
+kind: Service
+metadata:
+  name: api-server-svc
+spec:
+  selector:
+    app: api-server
+  ports:
+    - protocol: "TCP"
+      port: 8080
+      targetPort: 8080
+  type: LoadBalancer
+
+
