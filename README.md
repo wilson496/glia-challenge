@@ -12,10 +12,8 @@ Prerequisites
 
 Install minikube on your local machine:
 ● https://minikube.sigs.k8s.io/docs/start/
-● https://docs.okd.io/3.11/minishift/getting-started/installing.html
-
-
-
+● Python3.8
+● 
 
 
 Minishift was not used for this implementation, due to its lack of support for Python 3.7, which is required for FastAPI. Minikube, however, is able to be used. 
