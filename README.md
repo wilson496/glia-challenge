@@ -1,13 +1,3 @@
-Requirements
-1. Your solution MUST be containerized.
-2. You must have a deployment template for your solution.
-3. Our preference is for your solution to be written in Python or Node.js (in that order).
-4. You should provide detailed instructions on how to launch your solution locally.
-5. Please try not to spend well over 2 hours on this assessment.
-6. If anything is unclear, please state your assumptions
-
-
-
 Prerequisites
 
 Install minikube on your local machine:
